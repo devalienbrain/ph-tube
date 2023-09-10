@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHero Tube</title>
+  <!-- daisyUI cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Import google fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- Custom style for font: Inter-->
+  <style>
+.text-inter{
+  font-family: 'Inter', sans-serif;
+}
+  </style>
+</head>
+<body class="text-inter">
+ <header class="container mx-auto mb-7">
+<nav class="flex flex-col md:flex-row justify-between items-center py-5 gap-7">
+  <div class="flex-1 flex justify-center md:justify-start items-center">
+<img src="logo.png" alt="Logo" class="w-40">
+  </div>
+  <div class="flex-1 flex justify-center">
+<button onclick="sortItemsBtnClicked()" class="flex justify-center items-center bg-gray-200 hover:bg-red-600 hover:text-white py-2 px-5 rounded-sm">Sort by view</button>
+  </div>
+  <div class="flex-1 flex justify-center md:justify-end">
+<a class="flex justify-center items-center bg-red-600 hover:bg-red-500 text-white py-2 px-5 rounded-sm" href="blog.html" target="_blank">Blog</a>
+  </div>
+</nav>
+<hr class="w-full border">
+ </header>
+ <main class="container mx-auto">
+<!-- Category container section -->
+<section class="p-5">
+<div id="category-container" class="flex justify-center gap-7 items-center flex-wrap">
+
+</div>
+</section>
+
+<!-- Dynamic card container section -->
+
+<div id="no-data" class="w-full flex flex-col justify-center align-center text-center"></div>
+
+<section id="api-data-container" class="mt-11 mb-11 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 text-center">
+
+<!-- Dynamic cards will appear here -->
+
+
+</section>
+ </main>
+ <script src="index.js"></script> 
+</body>
+</html>

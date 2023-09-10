@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHTube BLOG</title>
+  <!-- daisyUI cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Import google fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Custom style for font: Inter-->
+  <style>
+    .text-inter {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="text-inter p-2">
+  <header class="container mx-auto mb-7">
+    <nav class="flex flex-col md:flex-row justify-between items-center py-5 gap-7">
+      <div class="flex-1 flex justify-center md:justify-start items-center">
+        <img src="logo.png" alt="Logo" class="w-40">
+      </div>
+      <div class="flex-1 flex justify-center md:justify-end">
+        <button class="flex justify-center items-center bg-red-600 font-bold text-white py-2 px-5 rounded-sm">
+Blog
+          </button>
+      </div>
+    </nav>
+    <hr class="w-full border">
+  </header>
+  <main class="container mx-auto">
+   <section class="text-left mt-11 mb-11">
+<h2 class="text-xl font-bold">Blog Questions and Answers (Q&A)</h2>
+<div class="mt-7 border rounded-xl hover:border-red-500 hover:border text-lg p-3">
+<h4>1. Discuss the scope of <span class="font-semibold">var, let,</span> and <span class="font-semibold">const.</span></h4>
+<p class="mt-5 mb-3"><span class="font-semibold italic">Ans: </span>In JavaScript there are 3 types of a variable declaration. 'Let' and 'Const' are 2 ES6 concepts. Previously 'Var' was used. The scope of Var is <strong>global</strong>, when it's declared outside a function, otherwise when var is declared within a function it's <strong>functional scoped</strong>. On the other hand, Let and Const both are <strong>block</strong> scoped. By declaring let, the variable value can <strong> changeble</strong>, whereas, declaration const means the variable is <strong> constant or is not changeable. </strong>Now a days, var is not but let and const are highly used.</p>
+</div>
+<!-- QA-2 -->
+<div class="mt-7 border rounded-xl hover:border-red-500 hover:border text-lg p-3">
+<h4>2. Tell us the use cases of <span class="font-semibold">null</span> and <span class="font-semibold">undefined.</span></h4>
+<p class="mt-5 mb-3"><span class="font-semibold italic">Ans: </span>'Null' means an empty value. Otherwise, 'Undefined' means the variable has been declared, but its value has not been assigned. Actually, undefined is the default value assigned by JavaScript to uninitialized variables. Otherwise, a null value in JavaScript is used to indicate an object value is absent actually.</p>
+</div>
+
+<!-- QA-3 -->
+<div class="mt-7 border rounded-xl hover:border-red-500 hover:border text-lg p-3">
+<h4>3. What do you mean by <span class="font-semibold">REST API </span>?</h4>
+<p class="mt-5 mb-3"><span class="font-semibold italic">Ans: </span>REST API means <em>'Representational State Transfer' </em>Application Programming Interface (API). It means every url represents some objects. REST API transfers client to server and server to client some state or condition via representation.</p>
+</div>
+
+</section>
+
+  </main>
+</body>
+
+</html>
